@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleeping Shadows Game - بازی سایه های خفته</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="Sleeping Shadows Game, بازی سایه های خفته, System Down">
+    <meta name="description" content="بازی سایه های خفته از System Down Team منتشر شد.">
+    <link rel="icon" href="./icon.png" type="image/png">
+</head>
+
+<body>
+    <header dir="rtl">
+        <img src="./icon.png" width="15%" style="margin-right: 10px;" height="15%" alt="">
+        <h1>سایه های خفته</h1>
+        <button onclick="ShowMenu()"><i class="fa-solid fa-bars"></i></button>
+        <div class="menu" id="menu">
+            <a href="#contact" onclick="ShowMenu()">تماس با ما</a>
+            <a href="#about" onclick="ShowMenu()">درباره بازی</a>
+            <a href="#download" onclick="ShowMenu()"
+                style="border-radius: 15px;margin-right: auto;margin:10px;background-color: blueviolet;padding: 1% 5%;">دانلود
+                بازی</a>
+        </div>
+    </header>
+    <section style="height: fit-content;" class="sect" id="about" dir="rtl">
+        <p>بازی سایه های خفته منتشر شد.
+            <br>بعد از حدود 4 ماه که تیم با مشکل بیلد بازی روبرو شده بود.
+            <br>این بازی هم برای اندروید و هم برای ویندوز منتشر شده است.
+        </p>
+        <div style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;align-items: center;">
+            <img src="./image1.jpg" alt="" style="width: 45%;flex: 1 0 45%;">
+            <img src="./image2.jpg" alt="" style="width: 50%;flex: 1 0 45%;margin-right: 20px;">
+        </div>
+        <p>تقدیم به AmirMajd که به من کمک فراوانی در ساخت این بازی کرد.</p>
+    </section>
+    <section class="sect" style="height: fit-content;" id="download" dir="auto">
+        <p>
+            این بازی برای اندروید در دسترس است میتوانید از لینک زیر دانلود کنید.
+        </p>
+        <a href="./Sleeping-Shadows.apk"><button class="btn-download">دانلود برای اندروید</button></a>
+    </section>
+    <section class="sect" id="contact" style="height: fit-content;">
+        <form action="mailto:systemdown@duck.com" method="get" style="display: flex;flex-wrap: wrap;gap: 10px;">
+            <textarea type="text" class="input" placeholder="enter your comment" rows="10"></textarea>
+            <input type="text" placeholder="enter your email" class="input" style="flex: 1 0 75%;">
+            <button type="submit" class="btn" style="margin-left:auto;flex: 1 0 15%;"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
